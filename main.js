@@ -14,21 +14,21 @@ define(function (require, exports, module) {
 	var EditorManager = brackets.getModule("editor/EditorManager");
     
 	var dm = brackets.getModule("document/DocumentManager");
-	//var widget = brackets.getModule("editor/InlineWidget");
-	var widget = brackets.getModule("widgets/Dialogs");
+	
+	//var widget = brackets.getModule("widgets/Dialogs");
 	
 	var file_counter = 0;
 	
     //--------------------------------------------------------
 	function loadHTML() {	        
 		var template = require('text!./template/html-template.html');
-		var doc = dm.createUntitledDocument(++file_counter, ".html");				
+		var doc = dm.createUntitledDocument(++file_counter, ".html");			
 		doc.setText(template);		
     }
 	//--------------------------------------------------------
 	function loadCSS() {
 		var template = require('text!./template/css-template.html');
-		var doc = dm.createUntitledDocument(++file_counter, ".css");				
+		var doc = dm.createUntitledDocument(++file_counter, ".css");			
 		doc.setText(template);		
     }
 	//--------------------------------------------------------
@@ -75,12 +75,6 @@ define(function (require, exports, module) {
 		menu.addMenuItem(commandNG_02, "Ctrl-Alt-Shift-D");
 		menu.addMenuItem(commandNG_03, "Ctrl-Alt-Shift-F");
 		
-        /*
-		$(document).ready(function(){
-
-			
-		});
-        */
 	};
 	//--------------------------------------------------------
 	init();
