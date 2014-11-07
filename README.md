@@ -1,8 +1,8 @@
-New html
-=======
-
-This only let you create a Html skeleton with 2 simple click.
-
-Html>New html
-
-feel free to edit html-template.html for your personal use !
+Code Addict-Template
+	New HTML
+	New CSS
+	New JavaScript
+	-----------
+	New Controller
+	New Directive
+	New Filter
