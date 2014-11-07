@@ -1,0 +1,13 @@
+{
+    "name": "Code Addict",
+    "title": "HTML/Angular Template",
+    "description": "Template of HTML (, css, javascript) and AngularJS (controller, directive, filter)",
+    "homepage": "https://github.com/Genoux/New-Html",
+    "version": "0.0.2",
+    "author": "SuperTee Suudsuud",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.24.0"
+    }
+   
+}
