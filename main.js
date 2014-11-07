@@ -44,36 +44,17 @@ define(function (require, exports, module) {
 		doc.setText(template);		
     }
 	//--------------------------------------------------------
-    function loadDirective() {
-				
-		//showModalDialogUsingTemplate("<h2>Title H2</h2>", "title", "message");
-		//showModalDialog();
-		//alert("loadDirective");
-		//loadDialog("new-directive-dialog.html");		
+    function loadDirective() {		
 		var template = require('text!./template/directive-template.html');
 		var doc = dm.createUntitledDocument(++file_counter, ".js");				
 		doc.setText(template);				
     }
 	//--------------------------------------------------------
     function loadFilter() {		
-		
 		var template = require('text!./template/filter-template.html');
 		var doc = dm.createUntitledDocument(++file_counter, ".js");				
 		doc.setText(template);				
     }
-	//--------------------------------------------------------
-	/*
-	function loadDialog(name){
-		
-		var dialogPath = "text!./widget/"+name;		
-		alert(dialogPath);
-		
-		//var tt = require('text!./widget/new-directive-dialog.html');
-		var tt = require(dialogPath);
-		alert("tt : "+tt);
-
-	}
-	*/
 	//--------------------------------------------------------
 	function init(){		
 		CommandManager.register("New HTML", commandHTML, loadHTML); 
@@ -94,24 +75,12 @@ define(function (require, exports, module) {
 		menu.addMenuItem(commandNG_02, "Ctrl-Alt-Shift-D");
 		menu.addMenuItem(commandNG_03, "Ctrl-Alt-Shift-F");
 		
+        /*
 		$(document).ready(function(){
-			
-			//var html = "<div style='position: absolute; top: 0; left: 0; width: 500px; height: 500px; background-color: #808080;'><h1>Title</h1><input type='text' id='txt-name' value='XXX' /></div>";			
-			var html = "<div style='visibility: visible;position: fixed;left: 0;top: 0;width: 100%;height: 100%;text-align:center;z-index: 200;background-color: black;opacity:0.9;'><h1>Title</h1><input type='text' id='txt-name' value='XXX' /></div>";			
-			$(this).append(html);
-			
-			//var $html = $(html);
-			/*
-			widget.showModalDialogUsingTemplate(html);
-			
-			var name = $html.find("input[id=txt-name]").val();
-			alert(name);
-			*/
-			
-			//var popup = brackets.getModule("widgets/PopUpManager");			
-			//popup
+
 			
 		});
+        */
 	};
 	//--------------------------------------------------------
 	init();
